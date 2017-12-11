@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Home</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<style>
+		body{
+			font-family: serif;
+		}
+		#picTable{
+			width: 50px;
+			height: 50px;
+			border: 1 px solid white;
+			margin: auto;
+			padding: 1 px;
+			
+		}
+		#resetti{
+			margin: auto;
+		}
+		</style>
+		<script src="plantJava.js"></script>
+
+	</head>
+	<body>
+		
+		<table id="pageList">
+			<tbody>
+				<tr>
+					<td id="Home"><a href="index.html">Home</a></td>
+					<td id="farm"><a href="farm.html">Farm</a></td>
+					<td id="plants"><a href="plants.html">Plants</a></td>
+					<td id="seasons"><a href="seasons.html#sSelect">Seasons</a></td>
+					<td id="map"><a href="map.html">Map</a></td>
+				</tr>
+			</tbody>
+		</table>
+			
+		<table id="picTable">
+			<tbody>
+				<tr>
+					<td data-pid="1" name="pics"><img id="1" src=""></td>
+					<td data-pid="2" name="pics"><img id="2" src=""></td>
+					<td data-pid="3" name="pics"><img id="3" src=""></td>
+				</tr><tr>
+					<td data-pid="4" name="pics"><img id="4" src=""></td>
+					<td data-pid="5" name="pics"><img id="5" src=""></td>
+					<td data-pid="6" name="pics"><img id="6" src=""></td>
+				</tr>
+			</tbody>
+		</table><br>
+		<hr>
+		<button type="button" id="resetti">see different plants</button>
+	</body>
+</html>
