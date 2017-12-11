@@ -1,15 +1,17 @@
 a{
 	color: white;
-	
+
 }
 
 div{
 	font-family: "Bitstream Vera Sans Mono", sans-serif;
 }
+
 body{
 	background-color: black;
 	color: white;
 }
+
 #pageList{
 	background-color: black;
 	border: 1px solid white;
