@@ -13,15 +13,44 @@
 		</style>
 		<script src="utl.js"></script>
 		<script>
+		var charas = {};
+		
+		charas.init = function()
+		{
+			utl.eid("chara").focus();
+		}
+		charas.focuss = function(ev)
+		{
+			if (ev.target.nodeName.toLowerCase() === "input")
+				ev.target.style.backgroundColor = "bisque";
+		}
+		charas.goThere = function()
+		{
+			window.open("https://game.aq3d.com/account/Character?id=" + utl.eid("chara").value);
+		}
+		
+		
+		
+		
+		
+		
+		
+		window.onload = function()
+		{
+			//INIT
+			charas.init();
+			
+			utl.eid("chara").addEventListener('focus', charas.focuss);
+			utl.eid("chara").addEventListener('blur', charas.goThere);
+		}
+		
+		
+		
 		
 		</script>
-
 	</head>
 	<body>
-		<figure id="logo">
-			<img src="valleyLogo.png">
-			<figcaption>Stardew Valley</figcaption>
-		</figure>
+		
 		<table id="pageList">
 			<tbody>
 				<tr>
@@ -35,6 +64,13 @@
 			</tbody>
 		</table>
 		<br>
+		<h5>Here you can look at the character pages of players in AdventureQuest 3D</h5>
+		Enter Character Name: <input id="chara" type="text" size="10" maxlength="12">
+		<br>
+		<button type="button" id="charaPage">Go to the Character page</button>
+		
+		
+		
 		
 	</body>
 </html>
