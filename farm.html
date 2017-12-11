@@ -1,43 +1,56 @@
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Farm</title>
-		<link rel="stylesheet" type="text/css" href="styles.css">
-		<style>
-			div{
-				font-family: "Bitstream Vera Sans Mono";
-			}
-			.disDiv{
-				display: none;
-			}
-		</style>
-		<script src="farmJava.js"></script>
-	</head>
-	<body id="body">
-		
-		<img src="farm.jpg" usemap="#image-map">
+<head>
+	<meta charset="UTF-8">
+	<title>Farm</title>
 
-		<map name="image-map">
-			<area target="" alt="" title="" id="randoSeeds" coords="924,539,788,408" shape="rect">
-			<area target="" alt="" title="" id="player" coords="722,394,57" shape="circle">
-			<area target="" alt="" title="" id="peppers" coords="543,796,605,796,596,284,551,283,540,648,442,389,414,733,536,735,418,388,412,623" shape="poly">
-			<area target="" alt="" title="" id="tomatoes" coords="473,379,409,380,413,190,591,188,590,258,466,271" shape="poly">
-		</map>
-		<br><hr>
-		
-		<div class="disDiv" id="seedDiv">
-			<p>These are mixed seeds that you can get by cutting grass. They're different plants each time.</p>
-		</div>
-		
-		<div class="disDiv" id="playerDiv">
-			<p>This is the player that you control. I named him Jack. He's named after me</p>
-		</div>
-		
-		<div class="disDiv" id="pepperDiv">
-			<p>These are pepper plants. They still grow peppers even after you harvest them for the whole season</p>
-		</div>
-		<div class="disDiv" id="tomatoDiv">
-			<p>These are tomato plants. They are like the peppers in that you can still harvest them the whole season</p>
-		</div>
-	</body>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+</head>
+<body id="body">
+	<div class="jumbotron">
+		<table id="pageList">
+			<tbody>
+				<tr>
+					<td id="Home"><a class="btn btn-outline-primary" href="index.html" role="button">Home</a></td>
+					<td id="farm"><a class="btn btn-outline-primary" href="farm.html" role="button">Farm</a></td>
+					<td id="plants"><a class="btn btn-outline-primary" href="plants.html" role="button">Plants</a></td>
+					<td id="seasons"><a class="btn btn-outline-primary" href="seasons.html#sSelect" role="button">Seasons</a></td>
+					<td id="map"><a class="btn btn-outline-primary" href="map.html" role="button">Map</a></td>
+				</tr>
+			</tbody>
+		</table>
+		<hr class="my-4">
+		<img src="./images/farm.jpg" usemap="#image-map" style="width: 100%;">
+	</div>
+
+	<map name="image-map">
+		<area target="" alt="" title="" id="randoSeeds" coords="924,539,788,408" shape="rect">
+		<area target="" alt="" title="" id="player" coords="722,394,57" shape="circle">
+		<area target="" alt="" title="" id="peppers" coords="543,796,605,796,596,284,551,283,540,648,442,389,414,733,536,735,418,388,412,623" shape="poly">
+		<area target="" alt="" title="" id="tomatoes" coords="473,379,409,380,413,190,591,188,590,258,466,271" shape="poly">
+	</map>
+	<br><hr>
+
+	<div class="disDiv" id="seedDiv">
+		<p>These are mixed seeds that you can get by cutting grass. They're different plants each time.</p>
+	</div>
+
+	<div class="disDiv" id="playerDiv">
+		<p>This is the player that you control. I named him Jack. He's named after me</p>
+	</div>
+
+	<div class="disDiv" id="pepperDiv">
+		<p>These are pepper plants. They still grow peppers even after you harvest them for the whole season</p>
+	</div>
+	<div class="disDiv" id="tomatoDiv">
+		<p>These are tomato plants. They are like the peppers in that you can still harvest them the whole season</p>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
 </html>
